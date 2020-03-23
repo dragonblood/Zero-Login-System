@@ -31,14 +31,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Vendor apps
-    'bootstrap4',
-    'rest_framework',
-    'corsheaders',  
+    'bootstrap4', 
 
     # Application apps
     'main',
     'accounts',
-    'Atlus',
     #'Boomerang',
 ]
 

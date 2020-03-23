@@ -11,8 +11,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('accounts/', include('accounts.urls')),
-    path('atlus/', include('Atlus.urls')),
-    #path('boomerang/', include('Boomerang.urls')),
 
     path('', IndexPageView.as_view(), name='index'),
 
