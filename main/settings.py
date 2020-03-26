@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     # Application apps
     'main',
     'accounts',
-    #'Boomerang',
 ]
 
 MIDDLEWARE = [
@@ -45,7 +44,6 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -129,11 +127,11 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 USE_I18N = True
 USE_L10N = True
 LANGUAGE_CODE = 'en'
-LANGUAGES = [
-    ('en', _('English')),
-    ('ru', _('Russian')),
-    ('zh-Hans', _('Simplified Chinese')),
-]
+#LANGUAGES = [
+#    ('en', _('English')),
+#    ('ru', _('Russian')),
+#    ('zh-Hans', _('Simplified Chinese')),
+#]
 
 TIME_ZONE = 'UTC'
 USE_TZ = True
