@@ -1,4 +1,0 @@
-django-bootstrap4
-django
-psycopg2
-beautifulsoup4

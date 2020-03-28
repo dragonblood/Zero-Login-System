@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django-bootstrap4 = "*"
+psycopg2 = "*"
+beautifulsoup4 = "*"
+Django = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.7"
