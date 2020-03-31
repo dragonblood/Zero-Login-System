@@ -18,9 +18,10 @@ urlpatterns = [
     path('language/', ChangeLanguageView.as_view(), name='change_language'),
 
    
-    path('Contact/', views.contact, name = 'Contact'),
-    path('Portfolio/', views.portfolio, name = 'Portfolio'),
-    path('About/', views.about, name = 'About'),
+    path('Atlus/', views.Atlus, name = 'Atlus'),
+    path('Boomerang/', views.Boomerang, name = 'Boomerang'),
+    path('Cataract/', views.Cataract, name = 'Cataract'),
+    path('Diclonius/', views.Diclonius, name = 'Diclonius'),
 ] 
 
 if settings.DEBUG:

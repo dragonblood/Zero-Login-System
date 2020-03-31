@@ -8,11 +8,14 @@ class IndexPageView(TemplateView):
 class ChangeLanguageView(TemplateView):
     template_name = 'main/change_language.html'
 
-def about(request):
-    return render(request, 'static/About.html')
+def Atlus(request):
+    return render(request, 'static/Atlus.html')
 
-def contact(request):
-    return render(request, 'static/Contact.html')
+def Boomerang(request):
+    return render(request, 'static/Boomerang.html')
 
-def portfolio(request):
-    return render(request, 'static/Portfolio.html')
+def Cataract(request):
+    return render(request, 'static/Cataract.html')
+
+def Diclonius(request):
+    return render(request, 'static/Diclonius.html')
