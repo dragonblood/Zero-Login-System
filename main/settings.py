@@ -30,6 +30,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #libs
+    'bootstrap4',
+
     # Application apps
     'main',
     'accounts',
