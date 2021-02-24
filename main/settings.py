@@ -16,10 +16,10 @@ CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 SECRET_KEY = '3%)4ya)u3q4!b6gtu*gh(wxzz@0=vg^k=6b!$3jd5t)c4^*rbg'
 
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vipuldjangologin.herokuapp.com', '127.0.0.1', '*']
 
 SITE_ID = 1
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Application definition
 
 INSTALLED_APPS = [
@@ -30,8 +30,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #libs
-    'bootstrap4',
+    # Vendor apps
+    'bootstrap4', 
 
     # Application apps
     'main',
@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'main.urls'
@@ -71,20 +72,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'main.wsgi.application'
 
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(CONTENT_DIR, 'tmp/emails')
-EMAIL_HOST_USER = 'petkar.vipul@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
 DEFAULT_FROM_EMAIL = 'test@example.com'
 
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'librus',
-        'USER': 'vipul',
-        'PASSWORD': '9923',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'd1674t9dctgooi',
+        'USER': 'emgjclivpoebpq',
+        'PASSWORD': '5ed42e2d9566c53de03badf9a84e9974f40b269b6f383b99c14e4ee01450ac7a',
+        'HOST': 'ec2-34-235-108-68.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -136,7 +137,7 @@ LANGUAGE_CODE = 'en'
 TIME_ZONE = 'UTC'
 USE_TZ = True
 
-STATIC_ROOT = os.path.join(CONTENT_DIR, 'static')
+STATIC_ROOT = os.path.join(CONTENT_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(CONTENT_DIR, 'media')
@@ -151,4 +152,3 @@ LOCALE_PATHS = [
     os.path.join(CONTENT_DIR, 'locale')
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True 

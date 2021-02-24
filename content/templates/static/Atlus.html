@@ -7,7 +7,9 @@
     <code>
 		<br />
 		<br />
-		<h2>{{ request.user.username }}@Librus:~$ <a href="https://github.com/dragonblood/Atlus">Atlus</a></h2>
-		<h3 class="red">> Project is Yet To be Deployed Please Visit Github by clicking above link.</h3>
+		<h2>{{ request.user.username }}@Librus:~$ Github: <a href="https://github.com/dragonblood/Atlus">Atlus</a>
+		<br>Website: <a href="https://vipulatlus.herokuapp.com/">Atlus</a>
+		<br>Website: <a href="#">Details</a></h2>
+
 		
-	</code>{% else %} {% trans '> You are a guest, please Login.' %} {% endif %}{% endblock %}
+	</code>{% else %} {% trans 'You are a guest, please Login.' %} {% endif %}{% endblock %}
