@@ -19,4 +19,3 @@ def Cataract(request):
 
 def Diclonius(request):
     return render(request, 'static/Diclonius.html')
-

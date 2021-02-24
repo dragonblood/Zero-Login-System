@@ -15,8 +15,8 @@ CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '3%)4ya)u3q4!b6gtu*gh(wxzz@0=vg^k=6b!$3jd5t)c4^*rbg'
 
-DEBUG = True
-ALLOWED_HOSTS = ['vipuldjangologin.herokuapp.com', '127.0.0.1', '*']
+DEBUG = False
+ALLOWED_HOSTS = ['vipuldjangologin.herokuapp.com' '*']
 
 SITE_ID = 1
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
