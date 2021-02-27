@@ -1,4 +1,4 @@
-# Zero: Login System
+# Zero: Login System [![Django CI](https://github.com/dragonblood/Zero-Login-System/actions/workflows/django.yml/badge.svg)](https://github.com/dragonblood/Zero-Login-System/actions/workflows/django.yml)
 ## 1. About:
 
 Simple and Beautiful Login system Built using Django, HTML and CSS.
