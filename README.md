@@ -15,9 +15,13 @@ python manage.py migrate
 python manage.py runserver
 ```
 ## 3. Screenshots
-| Login | Creating account | User Information |
-| -------|--------------|-----------------|
-|<img src="https://github.com/dragonblood/Django-Login/blob/master/Screenshots/Screenshot%20from%202020-03-31%2020-28-43.png"/>|<img src="https://github.com/dragonblood/Django-Login/blob/master/Screenshots/Screenshot%20from%202020-03-31%2020-29-32.png"/>|<img src="https://github.com/dragonblood/Django-Login/blob/master/Screenshots/Screenshot%20from%202020-03-31%2020-29-10.png"/>|
+| Login |
+| -------|
+|<img src="https://github.com/dragonblood/Django-Login/blob/master/Screenshots/Screenshot%20from%202020-03-31%2020-28-43.png"/>|
+Creating account |
+<img src="https://github.com/dragonblood/Django-Login/blob/master/Screenshots/Screenshot%20from%202020-03-31%2020-29-32.png"/>|
+User Information |
+<img src="https://github.com/dragonblood/Django-Login/blob/master/Screenshots/Screenshot%20from%202020-03-31%2020-29-10.png"/>|
 
 ### Please Feel Free to raise an issue.
 ### Take Permission Before using it in your work.
